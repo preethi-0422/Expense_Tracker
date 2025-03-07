@@ -1,0 +1,83 @@
+{
+  "users": {
+    "user_id_1": {
+      "uid": "user_id_1",
+      "email": "user@example.com",
+      "displayName": "John Doe",
+      "createdAt": "2025-03-06T08:00:00Z",
+      "settings": {
+        "currency": "INR",
+        "theme": "light",
+        "notificationsEnabled": true
+      }
+    }
+  },
+  "expenses": {
+    "expense_id_1": {
+      "userId": "user_id_1",
+      "amount": 500.00,
+      "category": "groceries",
+      "description": "Monthly groceries",
+      "date": "2025-03-06T08:30:00Z",
+      "paymentMethod": "cash",
+      "recurring": false,
+      "tags": ["food", "essentials"],
+      "attachments": ["receipt_url_1"]
+    }
+  },
+  "categories": {
+    "category_id_1": {
+      "userId": "user_id_1",
+      "name": "groceries",
+      "icon": "shopping_cart",
+      "color": "#4CAF50",
+      "budget": 5000.00,
+      "isDefault": true
+    },
+    "category_id_2": {
+      "userId": "user_id_1",
+      "name": "transportation",
+      "icon": "directions_car",
+      "color": "#2196F3",
+      "budget": 3000.00,
+      "isDefault": true
+    }
+  },
+  "subscriptions": {
+    "subscription_id_1": {
+      "userId": "user_id_1",
+      "name": "Netflix",
+      "amount": 499.00,
+      "category": "entertainment",
+      "billingCycle": "monthly",
+      "nextBillingDate": "2025-04-06T00:00:00Z",
+      "autoRenewal": true,
+      "reminderDays": 3
+    }
+  },
+  "budgets": {
+    "budget_id_1": {
+      "userId": "user_id_1",
+      "amount": 20000.00,
+      "period": "monthly",
+      "startDate": "2025-03-01T00:00:00Z",
+      "endDate": "2025-03-31T23:59:59Z",
+      "categoryAllocations": {
+        "groceries": 5000.00,
+        "transportation": 3000.00,
+        "entertainment": 2000.00,
+        "others": 10000.00
+      }
+    }
+  },
+  "transactions": {
+    "transaction_id_1": {
+      "userId": "user_id_1",
+      "type": "expense",
+      "referenceId": "expense_id_1",
+      "amount": 500.00,
+      "balance": 19500.00,
+      "date": "2025-03-06T08:30:00Z"
+    }
+  }
+}
